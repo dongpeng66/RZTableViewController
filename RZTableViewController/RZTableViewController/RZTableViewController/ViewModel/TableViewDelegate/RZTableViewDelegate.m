@@ -10,18 +10,17 @@
 @interface RZTableViewDelegate ()
 
 @property (nonatomic, strong, readwrite) RZTableViewBaseModel *rz_viewModel;
-@property (nonatomic, strong, readwrite) RZTableViewController *rz_tableViewController;
+
 
 @end
 @implementation RZTableViewDelegate
-- (instancetype)initTableViewDelegateWithViewModel:(RZTableViewBaseModel *)viewModel WithController:(RZTableViewController *)viewController{
+- (instancetype)initTableViewDelegateWithViewModel:(RZTableViewBaseModel *)viewModel{
     
     self = [super init];
     
     if (self) {
         
         self.rz_viewModel = viewModel;
-        self.rz_tableViewController=viewController;
     }
     
     return self;

@@ -49,6 +49,8 @@
     
     
     [self rz_pullUpEndRefresh];
+    
+    [self rz_pullUpNoMoreData];
 }
 
 - (SimpleTableViewModel *)simpleTableViewModel {
@@ -64,7 +66,7 @@
     
     rz_GET_METHOD_RETURN_OBJC(_simpleTableViewDelegate);
     
-    _simpleTableViewDelegate = [[SimpleTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.simpleTableViewModel WithController:self];
+    _simpleTableViewDelegate = [[SimpleTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.simpleTableViewModel];
     
     return _simpleTableViewDelegate;
 }

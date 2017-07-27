@@ -36,10 +36,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)rz_dropDownEndRefresh;
 
 /**
- 开始执行上拉操作/结束上拉操作
+ 开始执行上拉操作/结束上拉操作/没有更多数据
  */
 - (void)rz_pullUpBeginRefresh;
 - (void)rz_pullUpEndRefresh;
+/**
+ 没有更多数据
+ */
+- (void)rz_pullUpNoMoreData;
 
 - (void)rz_setTableViewDelegate:(_Nullable id <UITableViewDelegate>)delegate
                      dataSource:(_Nullable id <UITableViewDataSource>)dataSource;

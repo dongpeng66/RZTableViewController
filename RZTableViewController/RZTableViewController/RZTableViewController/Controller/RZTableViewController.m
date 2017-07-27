@@ -75,7 +75,7 @@
     
     if (!_rz_tableViewDelegate) {
         
-        _rz_tableViewDelegate = [[RZTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.rz_ableViewBaseModel WithController:self];
+        _rz_tableViewDelegate = [[RZTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.rz_ableViewBaseModel];
     }
     
     return _rz_tableViewDelegate;
@@ -132,7 +132,9 @@
 - (void)rz_pullUpEndRefresh {
     [self.rz_tableView.mj_footer endRefreshing];
 }
-
+- (void)rz_pullUpNoMoreData{
+    [self.rz_tableView.mj_footer endRefreshingWithNoMoreData];
+}
 - (void)rz_removeRefresh {
     
     self.rz_tableView.mj_header = nil;

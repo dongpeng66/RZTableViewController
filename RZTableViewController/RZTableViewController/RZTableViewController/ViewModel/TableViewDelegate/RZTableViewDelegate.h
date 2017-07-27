@@ -12,7 +12,6 @@
 @interface RZTableViewDelegate : NSObject<UITableViewDelegate>
 
 @property (nonatomic, strong, readonly) RZTableViewBaseModel *rz_viewModel;
-@property (nonatomic, strong, readonly) RZTableViewController *rz_tableViewController;
-- (instancetype)initTableViewDelegateWithViewModel:(RZTableViewBaseModel *)viewModel WithController:(RZTableViewController *)viewController;
+- (instancetype)initTableViewDelegateWithViewModel:(RZTableViewBaseModel *)viewModel;
 
 @end
