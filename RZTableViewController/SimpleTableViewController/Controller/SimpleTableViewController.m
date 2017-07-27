@@ -33,7 +33,7 @@
                        dataSource:self.simpleTableViewDataSource];
     
     [self rz_dropDownBeginRefresh];
-
+    
     
     
     
@@ -64,7 +64,7 @@
     
     rz_GET_METHOD_RETURN_OBJC(_simpleTableViewDelegate);
     
-    _simpleTableViewDelegate = [[SimpleTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.simpleTableViewModel];
+    _simpleTableViewDelegate = [[SimpleTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.simpleTableViewModel WithController:self];
     
     return _simpleTableViewDelegate;
 }
@@ -80,8 +80,8 @@
 
 - (void)rz_addConstraintsWithSuperView {
     
-   
-
+    
+    
     
     self.rz_tableView.frame=CGRectMake(0, 64,SCREEN_WIDTH , SCREEN_HEIGHT-64);
 }
@@ -90,13 +90,13 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

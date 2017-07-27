@@ -75,7 +75,7 @@
     
     if (!_rz_tableViewDelegate) {
         
-        _rz_tableViewDelegate = [[RZTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.rz_ableViewBaseModel];
+        _rz_tableViewDelegate = [[RZTableViewDelegate alloc] initTableViewDelegateWithViewModel:self.rz_ableViewBaseModel WithController:self];
     }
     
     return _rz_tableViewDelegate;
@@ -110,11 +110,11 @@
 }
 
 - (void)rz_dropDownRefresh {
-
+    
 }
 
 - (void)rz_pullUpRefresh {
-
+    
 }
 
 - (void)rz_dropDownBeginRefresh {

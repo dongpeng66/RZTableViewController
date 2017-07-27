@@ -14,6 +14,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSLog(@"-----------------%ld",indexPath.row);
+    [self.rz_tableViewController dismissViewControllerAnimated:YES completion:nil];
     
 }
 
