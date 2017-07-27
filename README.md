@@ -1,11 +1,12 @@
 # RZTableViewController
-MVVM设计模式的TableViewController的封装
-#依赖库</br>
-MJRefresh
+MVVM设计模式的TableViewController的封装</br>
+#依赖库
+</br>
+MJRefresh</br>
 #usage</br>
 #把RZTableViewController文件和MJRefresh文件(或者自行pod)导入项目中</br>
 
-文件目录SimpleTableViewController是例子
+文件目录SimpleTableViewController是例子</br>
 
-Controller,ViewModel,Model文件夹
+Controller,ViewModel,Model文件夹</br>
 SimpleTableViewController继承于RZTableViewController,SimpleTableViewDataSource继承于RZTableViewDataSource设置数据源个数和cell的样式,SimpleTableViewDelegate继承于RZTableViewDelegate设置点击的方法和其他的代理方法,SimpleTableViewModel继承于RZTableViewBaseModel设置数据请求控制taleview的刷新.
